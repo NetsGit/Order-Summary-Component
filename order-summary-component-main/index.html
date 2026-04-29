@@ -13,23 +13,40 @@
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <footer class="attribution">
+<body class="bg-[#e0e8ff] font-[Red_Hat_Display] text-center text-[#1f2f56] m-4 mt-0">
+  <img class="hidden md:block absolute  top-0 left-0 w-full z-0" src="./images/pattern-background-desktop.svg" alt="">
+  <img class=" block md:hidden absolute top-0 left-0 w-full z-0 lg: absolute top-5 left-0 w-full z-0" src="./images/pattern-background-mobile.svg" alt="">
+  <section class="relative z-10 flex items-center justify-center min-h-screen px-4" w-100%>
+    <div class="bg-[#f5f7ff] rounded-3xl shadow-lg overflow-hidden w-full max-w-sm md:max-w-md">
+      <img class="w-full h-auto rounded-t-3xl" src="./images/illustration-hero.svg" alt="Order Complete">
+      <div >
+        <p class="mt-4 text-2xl font-extrabold">Order Summary</p>
+        <p class="text-[#7280a7] text-center mt-3 text-center leading-relaxed">
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+        </p>
+      </div>
+      
+      <div class="p-4 rounded-lg mx-5 mt-4 bg-[#f5f7ff] flex items-center justify-between">
+        <div class="font-semibold flex justify-between gap-4">
+          <img class="" src="./images/icon-music.svg" alt="">
+          <div class="">
+          <p class="self-start font-extrabold">Annual Plan</p>
+          <div class="text-[#7280a7] text-sm font-bold block self-end">$59.99/year</div>
+          </div>
+          <button class="ml-20 md:ml-30 text-sm text-[#3829e0] hover:text-[#4c6290] underline self-center">Change</button>
+        </div>
+      </div>
+      <button class="place-self-center bg-[#3829e0] text-white p-3 rounded-lg w-80 md:w-100 shadow-xl my-2">Proceed to Payment</button>
+      <button class="block place-self-center text-sm text-[#7280a7] font-black my-6">Cancel Order</button>
+    </div>
+  </section>
+  <footer class="attribution ">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer>
